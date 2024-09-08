@@ -103,7 +103,9 @@ def bfs(matriz_juego):
     cola = [raiz]
 
     while len(cola) > 0:  # Condicion de parada
+    
         nodo = cola.pop(0)
+        print(nodo.posAgente())
         nodos_expandidos += 1
 
         if(nodo.condicionGanar()):
@@ -351,7 +353,7 @@ def dfs(matriz_juego):  # esta funcion hara el recorrido dfs sobre una matriz me
 
 
 #Descomentar para probar los ejemplos
-#print(bfs(juego1))
+print(bfs(juego1))
 #print(bfs(juego2))
 #print(bfs(juego3))
 #print(bfs(juego4))
